@@ -5,9 +5,9 @@ metadata:
 spec:
   postgresVersion: 17
   users:
-    - name: rhino
+    - name: svc_pulse_usr
       databases:
-        - zoo
+        - optdbpulse
   instances:
     - name: instance1
       dataVolumeClaimSpec:
@@ -20,10 +20,7 @@ spec:
     pgbackrest:
       repos:
       - name: repo1
-        volume:
-          volumeClaimSpec:
-            accessModes:
-            - "ReadWriteOnce"
-            resources:
-              requests:
-                storage: 1Gi
+        s3:
+          bucket: ocp-pgbackrest-test
+          endpoint: 'https://ceph.omf.cloud'
+          region: ev-ceph1
