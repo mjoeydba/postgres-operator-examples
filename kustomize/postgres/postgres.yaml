@@ -5,7 +5,7 @@ metadata:
 spec:
   postgresVersion: 17
   users:
-    - name: svc_pulse_usr
+    - name: svc-pulse-usr
       databases:
         - optdbpulse
   instances:
