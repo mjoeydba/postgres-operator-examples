@@ -33,3 +33,6 @@ spec:
         schedules:
           full: "0 1 * * 0"
           differential: "0 1 * * 1-6"
+      global:
+        repo1-retention-full: "14"
+        repo1-retention-full-type: time
