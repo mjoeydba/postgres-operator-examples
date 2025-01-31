@@ -30,3 +30,6 @@ spec:
           bucket: ocp-pgbackrest-test
           endpoint: 'https://ceph.omf.cloud'
           region: ev-ceph1
+        schedules:
+          full: "0 1 * * 0"
+          differential: "0 1 * * 1-6"
