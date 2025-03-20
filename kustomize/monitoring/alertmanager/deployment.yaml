@@ -31,7 +31,7 @@ spec:
           name: alertmanagerconf
         - mountPath: /alertmanager
           name: alertmanagerdata
-      #securityContext:
+      securityContext:
        # fsGroup: 26
         # supplementalGroups:
         # - 65534
